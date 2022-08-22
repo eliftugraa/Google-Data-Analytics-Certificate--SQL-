@@ -1,17 +1,24 @@
 You are working with a database table that contains data about music artists. The table is named artist. You want to review all the columns in the table. 
-
-You write the SQL query below. Add a FROM clause that will retrieve the data from the artist table.
+Add a FROM clause that will retrieve the data from the artist table.
 
 SELECT
 *
 FROM artist
 
-You are working with a database table that contains data about music albums. You are only interested in data related to the album with ID number 277. The album IDs are listed in the album_id column from the album table.
-
-You write the SQL query below. Add a WHERE clause that will return only data about the album with ID number 277.
+You are working with a database table that contains data about music albums. You are only interested in data related to the album with ID number 277. 
+The album IDs are listed in the album_id column from the album table. Add a WHERE clause that will return only data about the album with ID number 277.
 
 SELECT
 *
-FROM
-album
+FROM album
 WHERE album_id = '277' 
+
+
+You are writing a SQL query to filter data from a database that describes trees in Omaha, Nebraska. You want to only display entries for trees 
+that have a diameter of 30 inches. The name of the table you’re using is Nebraska_trees and the name of the column that shows 
+the diameters of the trees is trunk_diameter. How is the correct query syntax that will retrieve and filter data from this table? 
+
+SELECT * 
+FROM Nebraska_trees 
+WHERE trunk_diameter = 30
+
