@@ -22,3 +22,12 @@ SELECT *
 FROM Nebraska_trees 
 WHERE trunk_diameter = 30
 
+You are working with a database table that contains customer data. The state column lists the state where each customer is located.
+The state names are abbreviated. You want to find out which customers are located in the state of Florida (FL). Add a WHERE clause that will return 
+only customers located in FL.
+
+SELECT
+*
+FROM
+customer
+WHERE state = 'FL'
