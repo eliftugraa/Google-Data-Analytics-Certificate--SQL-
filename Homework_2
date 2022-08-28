@@ -1,0 +1,31 @@
+You are working on an international project and need to invoice your customers for the work you complete. The database you use contains an invoices table. 
+The invoices table contains the following columns: InvoiceId, CustomerId, InvoiceDate, BillingAddress, BillingCity, BillingState, BillingCountry, BillingPostalCode,Total.
+Create a query to return all the columns from this table for only customers in Germany who have an invoice total greater than $5. 
+
+SELECT *
+FROM invoices
+WHERE
+    BillingCountry = 'Germany' AND Total > 5
+    
+You are working on a project about music and have a table of tracks you need to sort.
+The database you use contains a Tracks table. The table contains the following columns: TrackId, Name, AlbumId, MediaTypeId, GenreId, Composer, Milliseconds, 
+Bytes, and UnitPrice. Write a SQL query to pull all columns from the Tracks table for only tracks with Chris Cornell as the composer.
+Sort the results in descending order by GenreId.
+
+SELECT 
+*
+FROM Tracks
+WHERE Composer = 'Chris Cornell' 
+ORDER BY GenreId DESC
+
+Write a query so that it returns the top 10 counties with the highest birth counts for 2018 only and specifies only rows that have a Year value equal to 2018-01-01
+
+
+SELECT *
+FROM  
+  `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality`  
+WHERE Year = '2018-01-01' 
+ORDER BY 
+   Births DESC 
+LIMIT  10 
+
